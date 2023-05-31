@@ -1,7 +1,7 @@
 library(TreeFactor)
 library(rpart)
 library(ranger)
-
+library(Rcpp)
 tf_residual = function(fit,Y,Z,H,months,no_H){
   # Tree Factor Models
   regressor = Z
@@ -132,7 +132,7 @@ t = proc.time() - t
 # this function tells you the first split variable and point
 fit$cutpoint
 fit$cutvalue
-
+fit$R2
 print(t)
 
 print(names(X_train[fit$cutpoint + 1]))
