@@ -166,6 +166,6 @@ Rcpp::List TreeFactor_APTree_2_cpp(arma::vec R, arma::vec Y, arma::mat X, arma::
         Rcpp::Named("portfolio") = all_leaf_portfolio,
         Rcpp::Named("json") = json_output,
         Rcpp::Named("R2") = loss,
-        //Rcpp::Named("cutpoint") = cutpoint,
+        Rcpp::Named("cutpoint") = cutpoint,
         Rcpp::Named("cutvalue") = cutvalue);
 }
