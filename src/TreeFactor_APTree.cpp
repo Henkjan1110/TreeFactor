@@ -111,6 +111,6 @@ Rcpp::List TreeFactor_APTree_cpp(arma::vec R, arma::vec Y, arma::mat X, arma::ma
         Rcpp::Named("ft") = ft,
         Rcpp::Named("portfolio") = all_leaf_portfolio,
         Rcpp::Named("json") = json_output,
-        Rcpp::Named("R2") = 10,
+        Rcpp::Named("R2") = loss,
         Rcpp::Named("all_criterion") = all_criterion);
 }
