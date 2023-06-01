@@ -115,13 +115,13 @@ Rcpp::List TreeFactor_APTree_2_cpp(arma::vec R, arma::vec Y, arma::mat X, arma::
 
      cout << "number of months on left and right " << num_months_left << " " << num_months_right << endl;
 
-     State state_left(X, Y, R, Z, H, portfolio_weight, loss_weight, stocks, months, first_split_var, second_split_var, third_split_var, deep_split_var, index_left, num_months_left, months_list_left, num_stocks, min_leaf_size, max_depth, num_cutpoints, equal_weight, no_H, abs_normalize, weighted_loss, stop_no_gain, lambda, count_left, first_split_mat);
+     // State state_left(X, Y, R, Z, H, portfolio_weight, loss_weight, stocks, months, first_split_var, second_split_var, third_split_var, deep_split_var, index_left, num_months_left, months_list_left, num_stocks, min_leaf_size, max_depth, num_cutpoints, equal_weight, no_H, abs_normalize, weighted_loss, stop_no_gain, lambda, count_left, first_split_mat);
 
-     State state_right(X, Y, R, Z, H, portfolio_weight, loss_weight, stocks, months, first_split_var, second_split_var, third_split_var, deep_split_var, index_right, num_months_right, months_list_right, num_stocks, min_leaf_size, max_depth, num_cutpoints, equal_weight, no_H, abs_normalize, weighted_loss, stop_no_gain, lambda, count_right, first_split_mat);
+     // State state_right(X, Y, R, Z, H, portfolio_weight, loss_weight, stocks, months, first_split_var, second_split_var, third_split_var, deep_split_var, index_right, num_months_right, months_list_right, num_stocks, min_leaf_size, max_depth, num_cutpoints, equal_weight, no_H, abs_normalize, weighted_loss, stop_no_gain, lambda, count_right, first_split_mat);
 
-     state.flag_first_cut = false;
+     // state.flag_first_cut = false;
 
-     state.split_candidates = split_candidates_backup;
+     // state.split_candidates = split_candidates_backup;
 
 
     double cutpoint = root.getv();
