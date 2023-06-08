@@ -152,8 +152,8 @@ Rcpp::List TreeFactor_APTree_2_cpp(arma::vec R, arma::vec Y, arma::mat X, arma::
     json_output[0] = j.dump(4);
 
     // calculating the pricing error of the factor, run regression
-    double loss = model.calculate_R2(state, ft);
-    // double loss = 500.0;
+  //  double loss = model.calculate_R2(state, ft);
+      double loss = 500.0;
 
     return Rcpp::List::create(
         Rcpp::Named("R") = R,
